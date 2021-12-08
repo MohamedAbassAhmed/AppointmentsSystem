@@ -1,0 +1,28 @@
+
+<form [formGroup]="form">
+  
+  <div class="row">
+    <div class="offset-3 col-6 card">
+      <h2 class="text-center">Set Appointment</h2>
+      <div class="card-body">
+        <label class="control-label" for="start-Date">Time Frame Start :</label>
+        <input class="form-control col-4" type="date" formControlName="startDate" id="start-Date" />
+      </div>
+      <div class="card-body">
+        <label class="control-label" for="end-Date">Time Frame End :</label>
+        <input class="form-control col-4" type="date" formControlName="endDate" id="end-Date" />
+      </div>
+      <div class="card-body">
+        <label class="control-label" for="name">Patint Name :</label>
+        <input class="form-control col-4" type="text" formControlName="patintName" id="name" />
+      </div>
+      <div class="text-center col">
+        <button class="btn btn-primary mb-2" (click)="OnSubmit()">Appoint</button>
+      </div>
+    </div>
+  </div>
+</form>
+
+<script>
+
+</script>

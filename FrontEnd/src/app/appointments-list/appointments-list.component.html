@@ -1,0 +1,25 @@
+
+<div class="row">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Patint Name</th>
+        <th>Sesseion Start Time</th>
+        <th>Sesseion End Time</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of appointments">
+        <td >
+          {{item.patintName}}
+        </td>
+        <td>
+          {{item.start}}
+        </td>
+        <td>
+          {{item.end}}
+        </td>
+      </tr>
+    </tbody>
+  </table>  
+</div>

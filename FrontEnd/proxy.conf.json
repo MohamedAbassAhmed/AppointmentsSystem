@@ -1,0 +1,8 @@
+{
+  "/weatherforecast": {
+    "target": "http://localhost:44304/api/Setting/GetSessionPeriod",
+      "secure": false,
+        "logLevel": "debug",
+          "changeOrigin": true
+  }
+}

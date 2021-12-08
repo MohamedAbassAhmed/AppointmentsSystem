@@ -1,0 +1,27 @@
+
+<form [formGroup]="profileForm">
+  <div class="row">
+    <div class="offset-3 col-6 card">
+      <h2 class="text-center">Settings</h2>
+
+      <div class="card-body">
+        <label class="control-label" for="session">Session Period (Minutes): </label>
+        <input class="form-control" id="session" type="text" formControlName="sessionPeriod">
+      </div>
+      <div class="card-body">
+        <label class="control-label" for="wait">Wait Period (Minutes): </label>
+        <input class="form-control" id="wait" type="text" formControlName="waitPeriod">
+      </div>
+      <div class="card-body">
+        <label class="control-label" for="rest">Rest Period (Minutes): </label>
+        <input class="form-control" id="rest" type="text" formControlName="restPeriod">
+      </div>
+      <div class="text-center col">
+        <button class="btn btn-primary mb-2" (click)="onSubmit()">Save</button>
+      </div>
+    </div>
+    
+  </div>
+</form>
+
+<!--<button (click)="onSubmit()">Save</button>-->
